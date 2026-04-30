@@ -113,12 +113,10 @@ The dataset arrived with no column headers and whitespace-separated values. A cu
 
 | Model | MSE | R² | Notes |
 |:---|:---:|:---:|:---|
-| Linear Regression (baseline) | `[paste from Colab]` | `[paste from Colab]` | OLS, no scaling needed, linearity assumption limits performance |
-| Decision Tree | `[paste from Colab]` | `[paste from Colab]` | Captures non-linearity; unconstrained depth risks overfitting |
-| Random Forest | `[paste from Colab]` | `[paste from Colab]` | Ensemble of trees reduces variance; expected improvement over DT |
-| XGBoost | `[paste from Colab]` | `[paste from Colab]` | Sequential boosting corrects residuals; best performer |
-
-> **Note to Debs:** Fill in the four rows above with the actual numbers printed in your Colab output cells for each model. They are in the format `MSE: X.XXXX` and `R2: X.XXXX`.
+| Linear Regression (baseline) | `24.2911` | `0.6688` | OLS, no scaling needed, linearity assumption limits performance |
+| Decision Tree | `10.4161` | `0.8580` | Captures non-linearity; unconstrained depth risks overfitting |
+| Random Forest | `7.9015` | `0.8923` | Ensemble of trees reduces variance; expected improvement over DT |
+| XGBoost | `6.9092` | `0.9058` | Sequential boosting corrects residuals; best performer |
 
 No feature scaling was applied — both OLS and tree-based models are scale-invariant. Scaling the features would change coefficient magnitudes but produce identical predictions and metrics.
 
@@ -133,9 +131,9 @@ Three models trained and evaluated with 80/20 stratified split. Logistic Regress
 
 | Model | Accuracy | Precision (weighted) | Recall (weighted) |
 |:---|:---:|:---:|:---:|
-| Logistic Regression | `[paste from Colab]` | `[paste from Colab]` | `[paste from Colab]` |
-| Random Forest | `[paste from Colab]` | `[paste from Colab]` | `[paste from Colab]` |
-| SVM (RBF kernel) | `[paste from Colab]` | `[paste from Colab]` | `[paste from Colab]` |
+| Logistic Regression | `0.933` | `0.933` | `0.933` |
+| Random Forest | `0.9667` | `0.9697` | `0.9667` |
+| SVM (RBF kernel) | `0.9667` | `0.9697` | `0.9667` |
 
 > **Note to Debs:** Paste your printed accuracy/precision/recall values for each model from your Colab output. They are in the results DataFrame printed in Phase 10.
 
@@ -226,7 +224,7 @@ LR=0.001 sweeps the top positions. LR=0.01 overshoots; LR=0.0001 cannot converge
 
 This internship covered the complete data science workflow end-to-end: raw data → cleaning → EDA → classical ML → NLP → deep learning. Every notebook is documented with the reasoning behind every decision, not just the code.
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/YOUR-LINKEDIN-HANDLE)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/deborah-olofin)
 
 ---
 
